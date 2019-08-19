@@ -33,7 +33,7 @@ ui::window : vnl670_efhp {
 }
 
 ui::text : backunlit {
- text: "<img src=/material/ui/white.mat xscale=stretch yscale=stretch color=44003189><ret><img src=/material/ui/dashboard/piva/display_01.mat xscale=stretch yscale=stretch color=4493CDF3>"
+ text: "<img src=/material/ui/white.mat xscale=stretch yscale=stretch color=22003189><ret><img src=/material/ui/dashboard/piva/display_01.mat xscale=stretch yscale=stretch color=2293CDF3>"
  coords_l: 0
  coords_r: 1152
  coords_t: 864
@@ -51,7 +51,7 @@ ui::text : backunlit {
 }
 
 ui::text : backlit {
- text: "<img src=/material/ui/white.mat xscale=stretch yscale=stretch color=FF003189><ret><img src=/material/ui/dashboard/piva/display_01.mat xscale=stretch yscale=stretch color=FF93CDF3>"
+ text: "<img src=/material/ui/white.mat xscale=stretch yscale=stretch color=66003189><ret><img src=/material/ui/dashboard/piva/display_01.mat xscale=stretch yscale=stretch color=6693CDF3>"
  coords_l: 0
  coords_r: 1152
  coords_t: 864
