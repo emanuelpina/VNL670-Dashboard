@@ -1,0 +1,31 @@
+Reworked dashboard to Volvo VNL670 (Aradeth).
+
+This dashboard is composed by 6 common elements (on top of the display), 4 basic screens and a warning screen.
+
+Common to all screens, on top of the display, you can find:
+- On left: Current Gear;
+- On middle left: Current Speed;
+- On middle right: Cruise Control (when active; image 5) or Engine Brake icon (when active; image 6);
+- On right: Clock and Out Temperature.
+
+On 1st screen (image 1), called "Odometer", you can find:
+- Trip Distance;
+- Total Distance travaled by truck.
+
+On 2nd screen (image 2), called "Economy", you can find:
+- Instant Fuel Consumption;
+- Average Trip Consumption.
+
+On 3rd screen (image 3), called "Autonomy", you can find:
+- Guessed operating range;
+- Remaining fuel in tank.
+
+On 4th screen (image 4), called "Temperatures", you can find:
+- Water Temperature;
+- Oil Temperature.
+
+Additional, when truck reaches 20% damage a warning screen appears (image 7).
+
+Don't forget, this dashboard is only for Volvo VNL 670 from Aradeth.
+
+Hope you enjoy this dashboard!

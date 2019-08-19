@@ -1,0 +1,914 @@
+SiiNunit
+{
+
+ui::window : vnl670_efhp {
+ window_handler: null
+ clip_children: true
+ keep_aspect: none
+ user_string_data: ""
+ fitting: false
+ my_children: 8
+ my_children[0]: backunlit
+ my_children[1]: backlit
+ my_children[2]: shared
+ my_children[3]: display0
+ my_children[4]: display1
+ my_children[5]: display2
+ my_children[6]: display3
+ my_children[7]: warning
+ coords_l: 0
+ coords_r: 1152
+ coords_t: 864
+ coords_b: 0
+ area_l: 0
+ area_r: 1152
+ area_t: 864
+ area_b: 0
+ id: 0
+ layer: 0
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: null
+}
+
+ui::text : backunlit {
+ text: "<img src=/material/ui/white.mat xscale=stretch yscale=stretch color=44003189><ret><img src=/material/ui/dashboard/piva/display_01.mat xscale=stretch yscale=stretch color=4493CDF3>"
+ coords_l: 0
+ coords_r: 1152
+ coords_t: 864
+ coords_b: 0
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 10
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: vnl670_efhp
+}
+
+ui::text : backlit {
+ text: "<img src=/material/ui/white.mat xscale=stretch yscale=stretch color=FF003189><ret><img src=/material/ui/dashboard/piva/display_01.mat xscale=stretch yscale=stretch color=FF93CDF3>"
+ coords_l: 0
+ coords_r: 1152
+ coords_t: 864
+ coords_b: 0
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 20
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: vnl670_efhp
+}
+
+ui::group : shared {
+ fitting: false
+ my_children: 6
+ my_children[0]: gear
+ my_children[1]: speed
+ my_children[2]: cc_indicator
+ my_children[3]: clock
+ my_children[4]: outtemp
+ my_children[5]: ebrake
+ coords_l: 0
+ coords_r: 1152
+ coords_t: 864
+ coords_b: 0
+ area_l: 0
+ area_r: 1152
+ area_t: 864
+ area_b: 0
+ id: 950
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: vnl670_efhp
+}
+
+ui::text_common : gear {
+ value: D10
+ look_template: efhp.vnl670.gear
+ text: ""
+ coords_l: 30
+ coords_r: 360
+ coords_t: 490
+ coords_b: 340
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1040
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: shared
+}
+
+ui::text_common : speed {
+ value: "120|km/h"
+ look_template: efhp.vnl670.speed
+ text: ""
+ coords_l: 30
+ coords_r: 675
+ coords_t: 470
+ coords_b: 320
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1020
+ layer: 1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: shared
+}
+
+ui::group : cc_indicator {
+ fitting: false
+ my_children[]: cc
+ my_children[]: cc_name
+ coords_l: 725
+ coords_r: 1120
+ coords_t: 490
+ coords_b: 340
+ area_l: 750
+ area_r: 1120
+ area_t: 490
+ area_b: 340
+ id: 1240
+ layer: 3
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: shared
+}
+
+ui::text_common : cc {
+ value: "60|mph"
+ look_template: efhp.vnl670.cc
+ text: ""
+ coords_l: 725
+ coords_r: 1120
+ coords_t: 420
+ coords_b: 270
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1100
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: cc_indicator
+}
+
+ui::text_common : cc_name {
+ value: "CC"
+ look_template: efhp.vnl670.ccname
+ text: ""
+ coords_l: 725
+ coords_r: 1120
+ coords_t: 480
+ coords_b: 330
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: cc_indicator
+}
+
+ui::text_common : clock {
+ value: "99:99pm"
+ look_template: efhp.vnl670.clock
+ text: ""
+ coords_l: 750
+ coords_r: 1120
+ coords_t: 490
+ coords_b: 340
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1050
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: shared
+}
+
+ui::text_common : outtemp {
+ value: "999|F"
+ look_template: efhp.vnl670.outtemp
+ text: ""
+ coords_l: 750
+ coords_r: 1120
+ coords_t: 420
+ coords_b: 270
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1000
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: shared
+}
+
+ui::text : ebrake {
+ text: "<img src=/material/ui/dashboard/volvo_vnl670/icons.mat height=112 width=168 left=p128 right=p256 top=p0 bottom=p128 color=FF44C5FE>\r\n\r\n"
+ coords_l: 750
+ coords_r: 1120
+ coords_t: 470
+ coords_b: 330
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1230
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: shared
+}
+
+ui::group : display0 {
+ fitting: false
+ my_children: 6
+ my_children[0]: distances
+ my_children[1]: distpage
+ my_children[2]: triptitle
+ my_children[3]: trip
+ my_children[4]: odotitle
+ my_children[5]: odometer
+ coords_l: 0
+ coords_r: 1152
+ coords_t: 864
+ coords_b: 0
+ area_l: 0
+ area_r: 1152
+ area_t: 864
+ area_b: 0
+ id: 100
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: vnl670_efhp
+}
+
+ui::text_common : distances {
+ value: "Odometer"
+ look_template: efhp.vnl670.topleft
+ text: ""
+ coords_l: 30
+ coords_r: 1120
+ coords_t: 80
+ coords_b: 10
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display0
+}
+
+ui::text_common : distpage {
+ value: "IIII"
+ look_template: efhp.vnl670.bottomright
+ text: ""
+ coords_l: 800
+ coords_r: 1120
+ coords_t: 80
+ coords_b: 10
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 5
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display0
+}
+
+ui::text_common : triptitle {
+ value: "Trip"
+ look_template: efhp.vnl670.trip
+ text: ""
+ coords_l: 100
+ coords_r: 575
+ coords_t: 320
+ coords_b: 220
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display0
+}
+
+ui::text_common : trip {
+ value: "12000|km"
+ look_template: efhp.vnl670.tripright
+ text: ""
+ coords_l: 576
+ coords_r: 1120
+ coords_t: 320
+ coords_b: 220
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1210
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display0
+}
+
+ui::text_common : odotitle {
+ value: "Total"
+ look_template: efhp.vnl670.trip
+ text: ""
+ coords_l: 100
+ coords_r: 575
+ coords_t: 190
+ coords_b: 90
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display0
+}
+
+ui::text_common : odometer {
+ value: "1200000|km"
+ look_template: efhp.vnl670.tripright
+ text: ""
+ coords_l: 576
+ coords_r: 1120
+ coords_t: 190
+ coords_b: 90
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1030
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display0
+}
+
+ui::group : display1 {
+ fitting: false
+ my_children: 6
+ my_children[0]: economy
+ my_children[1]: ecopage
+ my_children[2]: institle
+ my_children[3]: instant
+ my_children[4]: avgtitle
+ my_children[5]: average
+ coords_l: 0
+ coords_r: 1152
+ coords_t: 864
+ coords_b: 0
+ area_l: 0
+ area_r: 1152
+ area_t: 864
+ area_b: 0
+ id: 200
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: vnl670_efhp
+}
+
+ui::text_common : economy {
+ value: "Economy"
+ look_template: efhp.vnl670.topleft
+ text: ""
+ coords_l: 30
+ coords_r: 1120
+ coords_t: 80
+ coords_b: 10
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display1
+}
+
+ui::text_common : ecopage {
+ value: "III"
+ look_template: efhp.vnl670.bottomright
+ text: ""
+ coords_l: 800
+ coords_r: 1120
+ coords_t: 80
+ coords_b: 10
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 5
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display1
+}
+
+ui::text_common : institle {
+ value: "Instant"
+ look_template: efhp.vnl670.trip
+ text: ""
+ coords_l: 100
+ coords_r: 575
+ coords_t: 320
+ coords_b: 220
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display1
+}
+
+ui::text_common : instant {
+ value: "124.5|l/100km"
+ look_template: efhp.vnl670.tripright
+ text: ""
+ coords_l: 576
+ coords_r: 1120
+ coords_t: 320
+ coords_b: 220
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1160
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display1
+}
+
+ui::text_common : avgtitle {
+ value: "Average"
+ look_template: efhp.vnl670.trip
+ text: ""
+ coords_l: 100
+ coords_r: 575
+ coords_t: 190
+ coords_b: 90
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display1
+}
+
+ui::text_common : average {
+ value: "9.0|mpg"
+ look_template: efhp.vnl670.tripright
+ text: ""
+ coords_l: 576
+ coords_r: 1120
+ coords_t: 190
+ coords_b: 90
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1170
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display1
+}
+
+ui::group : display2 {
+ fitting: false
+ my_children: 6
+ my_children[0]: autonomy
+ my_children[1]: autpage
+ my_children[2]: fudistitle
+ my_children[3]: fudis
+ my_children[4]: fueltitle
+ my_children[5]: fuel
+ coords_l: 0
+ coords_r: 1152
+ coords_t: 864
+ coords_b: 0
+ area_l: 0
+ area_r: 1152
+ area_t: 864
+ area_b: 0
+ id: 300
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: vnl670_efhp
+}
+
+ui::text_common : autonomy {
+ value: "Autonomy"
+ look_template: efhp.vnl670.topleft
+ text: ""
+ coords_l: 30
+ coords_r: 1120
+ coords_t: 80
+ coords_b: 10
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display2
+}
+
+ui::text_common : autpage {
+ value: "II"
+ look_template: efhp.vnl670.bottomright
+ text: ""
+ coords_l: 800
+ coords_r: 1120
+ coords_t: 80
+ coords_b: 10
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 5
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display2
+}
+
+ui::text_common : fudistitle {
+ value: "Distance"
+ look_template: efhp.vnl670.trip
+ text: ""
+ coords_l: 100
+ coords_r: 575
+ coords_t: 320
+ coords_b: 220
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display2
+}
+
+ui::text_common : fudis {
+ value: "2450|km"
+ look_template: efhp.vnl670.tripright
+ text: ""
+ coords_l: 576
+ coords_r: 1120
+ coords_t: 320
+ coords_b: 220
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1080
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display2
+}
+
+ui::text_common : fueltitle {
+ value: "Fuel"
+ look_template: efhp.vnl670.trip
+ text: ""
+ coords_l: 100
+ coords_r: 575
+ coords_t: 190
+ coords_b: 90
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display2
+}
+
+ui::text_common : fuel {
+ value: "950|gal"
+ look_template: efhp.vnl670.tripright
+ text: ""
+ coords_l: 576
+ coords_r: 1120
+ coords_t: 190
+ coords_b: 90
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1060
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display2
+}
+
+ui::group : display3 {
+ fitting: false
+ my_children: 6
+ my_children[0]: temperatures
+ my_children[1]: temppage
+ my_children[2]: watertitle
+ my_children[3]: water
+ my_children[4]: oiltitle
+ my_children[5]: oil
+ coords_l: 0
+ coords_r: 1152
+ coords_t: 864
+ coords_b: 0
+ area_l: 0
+ area_r: 1152
+ area_t: 864
+ area_b: 0
+ id: 400
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: vnl670_efhp
+}
+
+ui::text_common : temperatures {
+ value: "Temperatures"
+ look_template: efhp.vnl670.topleft
+ text: ""
+ coords_l: 30
+ coords_r: 1120
+ coords_t: 80
+ coords_b: 10
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display3
+}
+
+ui::text_common : temppage {
+ value: "I"
+ look_template: efhp.vnl670.bottomright
+ text: ""
+ coords_l: 800
+ coords_r: 1120
+ coords_t: 80
+ coords_b: 10
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 5
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display3
+}
+
+ui::text_common : watertitle {
+ value: "Water"
+ look_template: efhp.vnl670.trip
+ text: ""
+ coords_l: 100
+ coords_r: 575
+ coords_t: 320
+ coords_b: 220
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display3
+}
+
+ui::text_common : water {
+ value: "999|F"
+ look_template: efhp.vnl670.tripright
+ text: ""
+ coords_l: 576
+ coords_r: 1120
+ coords_t: 320
+ coords_b: 220
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1090
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display3
+}
+
+ui::text_common : oiltitle {
+ value: "Oil"
+ look_template: efhp.vnl670.trip
+ text: ""
+ coords_l: 100
+ coords_r: 575
+ coords_t: 190
+ coords_b: 90
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display3
+}
+
+ui::text_common : oil {
+ value: "999|F"
+ look_template: efhp.vnl670.tripright
+ text: ""
+ coords_l: 576
+ coords_r: 1120
+ coords_t: 190
+ coords_b: 90
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 1010
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: display3
+}
+
+ui::group : warning {
+ fitting: false
+ my_children: 3
+ my_children[0]: warnings
+ my_children[1]: attention
+ my_children[2]: service
+ coords_l: 0
+ coords_r: 1152
+ coords_t: 864
+ coords_b: 0
+ area_l: 0
+ area_r: 1152
+ area_t: 864
+ area_b: 0
+ id: 900
+ layer: -1
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: vnl670_efhp
+}
+
+ui::text_common : warnings {
+ value: "Warnings"
+ look_template: efhp.vnl670.topleft
+ text: ""
+ coords_l: 30
+ coords_r: 1120
+ coords_t: 80
+ coords_b: 10
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: warning
+}
+
+ui::text : attention {
+ text: "<img src=/material/ui/dashboard/volvo_vnl670/icons.mat height=128 width=192 left=p0 right=p128 top=p0 bottom=p128 color=FF0000FF>\r\n\r\n"
+ coords_l: 479
+ coords_r: 671
+ coords_t: 330
+ coords_b: 200
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: warning
+}
+
+ui::text_common : service {
+ value: "Visit SERVICE!"
+ look_template: efhp.vnl670.service
+ text: ""
+ coords_l: 30
+ coords_r: 1120
+ coords_t: 200
+ coords_b: 100
+ area_l: 1
+ area_r: 0
+ area_t: 0
+ area_b: 1
+ id: 0
+ layer: 2
+ tab: -1
+ pointer: -1
+ apparent_depth: 0
+ my_parent: warning
+}
+
+}
